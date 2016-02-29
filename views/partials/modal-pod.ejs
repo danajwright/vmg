@@ -1,0 +1,52 @@
+
+<div class="modal" id="pod-modal" tabindex="-1" role="dialog" aria-labelledby="track" aria-hidden="true">
+  <div class="constrainer">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="pod-header">POD Request</h2>
+          <h2 id="pod-header-success" class="pod-success-header-hide">Success!</h2>
+        </div>
+
+        <form class="pod-form-wrap clearfix" id="podForm">
+          <input type="text" name="podName" class="modal-field" id="podName" placeholder="Full name" required>
+
+          <input type="email" name="podEmail" class="modal-field-half pull-left" id="podEmail" placeholder="Email address" required>
+
+          <input type="phone" name="podPhone" class="modal-field-half pull-right" id="podPhone" placeholder="Phone number" required>
+
+          <input type="text" name="podNumber" class="modal-field" id="podNumber" placeholder="Tracking number" required>
+
+          <div class="modal-weight-btns clearfix">
+            <p class="cargo-weight-txt">Is this a hot request?</p>
+            <label class="selectme">
+              <input class="weightCheckbox" id="podHot" type="checkbox" value="Hot"><span>Hot</span>
+            </label>
+          </div>
+
+          <textarea name="podIssue" class="pod-textarea" id="podIssue" placeholder="Please let us know any other details regarding your Proof of Delivery request"></textarea>
+        
+          <div class="modal-btn-container clearfix">
+  			     <button type="submit" class="modal-btn pull-right" id="pod-button">SUBMIT</button>
+             <a class="modal-cancel pull-left" data-dismiss="modal" aria-label="Close">Cancel</a>
+  		    </div>
+        </form>
+
+        <div class="pod-submit-confirm-hide" id="pod-submit-confirm-id">
+          <div class="check-animation">
+            <svg x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+              <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+              C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+            </svg>
+          </div>
+          <p class="success-txt">
+            Your POD request was submitted, a representative will be in touch with you shortly.
+          </p>
+          <a class="modal-success-okay" data-dismiss="modal" aria-label="Close">Sounds Good!</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+

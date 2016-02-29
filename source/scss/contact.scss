@@ -1,0 +1,95 @@
+
+
+.teams-txt-header a {
+    color: #7E14AA;
+	border-bottom: 1px solid #7E14AA;
+}
+
+/*----------------- SHADED SECTION -------------------*/
+
+.contact-shaded-section {
+	margin-top: 90px;
+	padding-top: 60px;
+	padding-bottom: 60px;  
+	background-color: #f8f8f8;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.shaded-feedback-txt p {
+	font-size: 33px;
+	text-align: center;
+    color: #666;
+    font-weight: 500;
+    line-height: 39px;
+    padding-bottom: 0px;
+}
+
+.feedback-btn-wrap {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feedback-btn {
+	margin-top: 40px;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.1px;
+	display: inline-block;
+	background-color: #7E14AA;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	width: 100%;
+	text-align: center;
+	color: #d8d7d7;
+	text-transform: uppercase;
+}
+
+.search-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none
+}
+
+@media (min-width: 480px) {
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+.shaded-feedback-txt p {
+    text-align: left;
+	font-size: 30px;
+    line-height: 36px;
+}
+
+.feedback-btn {
+	margin-top: 9px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+
+
+
+}
+
+@media (min-width: 991px) {
+
+
+.shaded-feedback-txt p {
+	font-size: 36px;
+    line-height: 43px;
+}
+
+.feedback-btn {
+	margin-top: 9px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+
+}

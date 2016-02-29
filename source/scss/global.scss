@@ -1,0 +1,236 @@
+
+
+
+@font-face {
+  font-family: 'AvenirPro';
+  font-weight: 800;
+  src: url('../../fonts/AvenirNextLTPro-Bold.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-Bold.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-Bold.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirProCn';
+  font-style: normal;
+  src: url('../../fonts/AvenirNextLTPro-Cn.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-Cn.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-Cn.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-Cn.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-Cn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirProCnIt';
+  font-style: normal;
+  src: url('../../fonts/AvenirNextLTPro-CnIt.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-CnIt.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-CnIt.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-CnIt.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-CnIt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirPro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/AvenirNextLTPro-Demi.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-Demi.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-Demi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirPro-DemiCn';
+  font-style: normal;
+  src: url('../../fonts/AvenirNextLTPro-DemiCn.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-DemiCn.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-DemiCn.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-DemiCn.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-DemiCn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirPro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/AvenirNextLTPro-MediumCn.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-MediumCn.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-MediumCn.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-MediumCn.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-MediumCn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AvenirPro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../fonts/AvenirNextLTPro-Regular.eot') format('embedded-opentype'),
+  url('../../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('../../fonts/AvenirNextLTPro-Regular.svg') format('svg'),
+  url('../../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('../../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+.clearfix {
+	clear: both;
+}
+
+a {
+  color: rgba(255,255,255,.85);
+  font-family: 'AvenirPro', sans-serif;
+  -webkit-font-smoothing: 'antialiased';
+  -webkit-transition: 150ms ease-in;
+  -moz-transition: 150ms ease-in;
+  -o-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+}
+
+a:hover {
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+  text-decoration: none
+}
+
+a:focus {
+  color: rgba(255,255,255,.85);
+  text-decoration: none;
+  outline: none;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+p {
+  font-family: 'AvenirPro', sans-serif;  
+  -webkit-font-smoothing: 'antialiased';
+  color: #666;
+}
+
+h1 {
+  color: #434343;
+  font-family: 'AvenirPro', sans-serif;
+  -webkit-font-smoothing: 'antialiased';
+  font-weight: 400;
+}
+
+h3 {
+  color: #666;  
+  font-family: 'AvenirPro', sans-serif;
+  -webkit-font-smoothing: 'antialiased';
+}
+
+span {
+  color: rgb(102, 102, 102);
+  -webkit-font-smoothing: 'antialiased';
+}
+
+
+.constrainer {
+  margin: auto;
+  max-width: 390px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-constrainer {
+  margin: auto;
+  max-width: 390px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+@media (min-width: 480px) {
+
+.constrainer {
+  margin: auto;
+  max-width: 460px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-constrainer {
+  margin: auto;
+  max-width: 460px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+
+
+@media (min-width: 768px) {
+
+.constrainer {
+  margin: auto;
+  max-width: 690px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.nav-constrainer {
+  margin: auto;
+  max-width: 690px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+
+@media (min-width: 991px) {
+
+.constrainer {
+  margin: auto;
+  max-width: 930px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-constrainer {
+  margin: auto;
+  max-width: 930px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+
+@media (min-width: 1050px) {
+
+.constrainer {
+  margin: auto;
+  max-width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-constrainer {
+  margin: auto;
+  max-width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

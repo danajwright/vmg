@@ -1,0 +1,33 @@
+{
+  "name": "node-ejs",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danajwright/gsv.git"
+  },
+  "author": "dana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danajwright/gsv/issues"
+  },
+  "homepage": "https://github.com/danajwright/gsv#readme",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.6.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  }
+}

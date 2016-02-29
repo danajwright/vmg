@@ -1,0 +1,45 @@
+
+<div class="modal" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="track" aria-hidden="true">
+  <div class="constrainer">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="feedback-header">Give Feedback</h2>
+          <h2 id="feedback-header-success" class="feedback-success-header-hide">Success!</h2>
+        </div>
+
+        <form class="modal-form-wrap clearfix" id="feedbackForm" action="">
+
+          <input type="text" name="feedbackName" class="modal-field" id="feedbackName" placeholder="Full name" required>
+
+          <input type="email" name="feedbackEmail" class="modal-field-half pull-left" id="feedbackEmail" placeholder="Email address" required>
+
+          <input type="phone" name="feedbackPhone" class="modal-field-half pull-right" id="feedbackPhone" placeholder="Phone number" required>
+
+          <textarea name="feedbackIssue" class="track-textarea" id="feedbackIssue" placeholder="Let us know how we're doing or if you have ideas for what we can improve on!" required></textarea>
+        
+          <div class="modal-btn-container clearfix">
+  			     <button type="submit" class="modal-btn pull-right" id="feedbackSubmit">SUBMIT</button>
+             <a class="modal-cancel pull-left" data-dismiss="modal" aria-label="Close">Cancel</a>
+  		    </div>
+
+        </form>
+
+        <div class="feedback-submit-confirm-hide" id="feedback-submit-confirm-id">
+          <div class="check-animation">
+            <svg x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+              <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+              C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+            </svg>
+          </div>
+          <p class="success-txt">
+            Your feedback was submitted, thank you so much!
+          </p>
+          <a class="modal-success-okay" data-dismiss="modal" aria-label="Close">Sounds Good</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
