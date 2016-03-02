@@ -24,7 +24,7 @@
 
 .nav-main a {
   color: #696969;
-  font-family: 'AvenirPro', sans-serif;
+  font-family: 'Circular', sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 1.1px;
@@ -125,32 +125,18 @@
 }
 
 
-.banner-txt {
-	display: block;
-	overflow: hidden;
-    font-family: 'AvenirPro', sans-serif;  
-	margin: auto;
-	color: #fff;
-	font-size: 50px;
-	font-weight: 300;
-	text-align: center;
-}
-
-
 
 /*----------------- SECTION/ STEPS -------------------*/
-
-
 
 .section-header {
 	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 860px;
-	margin-bottom: 60px;
+	margin-bottom: 70px;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 53px;
+	font-size: 30px;
+	line-height: 43px;
 	text-align: center;
 }
 
@@ -160,8 +146,8 @@
 	padding-right: 50px;
 }
 
-.step-container {
-	margin-top: 90px;
+.steps-img img {
+	max-width: 90px;
 }
 
 .step-graph {
@@ -170,13 +156,15 @@
 	font-size: 15.5px;
 	line-height: 27px;
 	color: #696969;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Circular', sans-serif;
 }
 
+.steps-img1 {
+	margin-top: 90px;
+}
 
-.steps img {
-	width: 80%;
-	height: 120px;
+.steps {
+	margin-bottom: 90px;
 }
 
 
@@ -282,6 +270,17 @@
 
 @media (min-width: 480px) {
 
+.section-header {
+	font-size: 39px;
+	line-height: 53px;
+}
+
+.nav-items a {
+	padding-left: 27px;
+	text-transform: uppercase;
+}
+
+//////////////////////////////
 
 .banner-header-sub {
 	font-size: 21px;
@@ -299,15 +298,6 @@
 
 }
 
-@media (min-width: 691px) {
-
-.search-btn {
-	padding-top: 21px;
-	padding-bottom: 15px;
-	width: 40%;
-}
-
-}
 
 @media (min-width: 768px) {
 
@@ -327,25 +317,22 @@
 	padding-top: 46px;
 }
 
-.nav-items a {
-	padding-left: 36px;
-	text-transform: uppercase;
-}
-
-.steps-header {
-	font-size: 45px;
+.section-header {
+	font-size: 39px;
 	line-height: 60px;
 }
 
-/*------------------ BANNER -------------------*/
+.steps-img img {
+	max-width: 127px;
+	height: 127px;
+}
 
-
-.CoverImage {
-  height: 600px;
+.steps-img1 {
+	margin-top: 0px;
 }
 
 
-/*----------------- STATES SECTION -------------------*/
+/*----------------- SHADED SECTION -------------------*/
 
 
 .shaded-section {
@@ -377,28 +364,61 @@
 
 /*----------------- LOGOS SECTION -------------------*/
 
-.equip-border {
-	margin-top: 90px;
-	border-top: 1px solid #ebebeb;
-}
 
 .logos {
+    background-image: url(../../img/vmg-dot8.png);
+    background-position: top left;
+    background-repeat: repeat-x;
 	display: block;
 }
 
-.logos-wrap {
-	margin-top: 60px;
-	text-align: center;
+.customers-col-container {
+	background-color: #ebebeb;
+	padding: 30px 30px 30px 30px;
+	color: #696969;
 }
 
-.logos-list img {
-	margin: auto;
-	width: 60%;
+.customers-col-container1 {
+	margin-top: 30px;
 }
+
+.customers-col-container img {
+	margin-top: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+	width: 40px;
+    background-image: url(../../img/vmg-dot8.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+
+.customer-txt {
+	color: #b3b3b3;
+	font-size: 15.5px;
+	line-height: 27px;
+	color: #696969;
+	font-family: 'Circular', sans-serif;
+}
+
+.img-txt {
+	padding-top: 36px;
+	margin-left: 20px;
+	color: #b3b3b3;
+	font-size: 15.5px;
+	line-height: 24px;
+	color: #696969;
+	font-family: 'Circular', sans-serif;
+}
+
 
 }
 
 @media (min-width: 991px) {
+
+.nav-items a {
+	padding-left: 36px;
+	text-transform: uppercase;
+}
 
 .logos-list img {
 	display: inline;

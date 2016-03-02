@@ -2,76 +2,44 @@
 
 
 @font-face {
-  font-family: 'AvenirPro';
-  font-weight: 800;
-  src: url('../../fonts/AvenirNextLTPro-Bold.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-Bold.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-Bold.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'AvenirProCn';
+  font-family: 'Circular';
   font-style: normal;
-  src: url('../../fonts/AvenirNextLTPro-Cn.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-Cn.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-Cn.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-Cn.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-Cn.otf') format('opentype');
+  src: url('../../fonts/circular-book.eot') format('embedded-opentype'),
+  url('../../fonts/circular-book.ttf') format('truetype'),
+  url('../../fonts/circular-book.svg') format('svg'),
+  url('../../fonts/circular-book.woff') format('woff'),
+  url('../../fonts/circular-book.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'AvenirProCnIt';
-  font-style: normal;
-  src: url('../../fonts/AvenirNextLTPro-CnIt.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-CnIt.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-CnIt.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-CnIt.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-CnIt.otf') format('opentype');
+  font-family: 'Circular';
+  font-weight: 600;
+  src: url('../../fonts/circular-black.eot') format('embedded-opentype'),
+  url('../../fonts/circular-black.ttf') format('truetype'),
+  url('../../fonts/circular-black.svg') format('svg'),
+  url('../../fonts/circular-black.woff') format('woff'),
+  url('../../fonts/circular-black.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'AvenirPro';
+  font-family: 'Circular';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/AvenirNextLTPro-Demi.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-Demi.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-Demi.otf') format('opentype');
+  src: url('../../fonts/circular-medium.eot') format('embedded-opentype'),
+  url('../../fonts/circular-medium.ttf') format('truetype'),
+  url('../../fonts/circular-medium.svg') format('svg'),
+  url('../../fonts/circular-medium.woff') format('woff'),
+  url('../../fonts/circular-medium.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'AvenirPro-DemiCn';
-  font-style: normal;
-  src: url('../../fonts/AvenirNextLTPro-DemiCn.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-DemiCn.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-DemiCn.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-DemiCn.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-DemiCn.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'AvenirPro';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../../fonts/AvenirNextLTPro-MediumCn.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-MediumCn.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-MediumCn.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-MediumCn.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-MediumCn.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'AvenirPro';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../../fonts/AvenirNextLTPro-Regular.eot') format('embedded-opentype'),
-  url('../../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
-  url('../../fonts/AvenirNextLTPro-Regular.svg') format('svg'),
-  url('../../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
-  url('../../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+  font-family: 'Circular';
+  font-weight: 800;
+  src: url('../../fonts/circular-bold.eot') format('embedded-opentype'),
+  url('../../fonts/circular-bold.ttf') format('truetype'),
+  url('../../fonts/circular-bold.svg') format('svg'),
+  url('../../fonts/circular-bold.woff') format('woff'),
+  url('../../fonts/circular-bold.otf') format('opentype');
 }
 
 
@@ -86,7 +54,7 @@ body {
 
 a {
   color: rgba(255,255,255,.85);
-  font-family: 'AvenirPro', sans-serif;
+  font-family: 'Circular', sans-serif;
   -webkit-font-smoothing: 'antialiased';
   -webkit-transition: 150ms ease-in;
   -moz-transition: 150ms ease-in;
@@ -109,21 +77,21 @@ a:focus {
 }
 
 p {
-  font-family: 'AvenirPro', sans-serif;  
+  font-family: 'Circular', sans-serif;  
   -webkit-font-smoothing: 'antialiased';
   color: #666;
 }
 
 h1 {
   color: #696969;
-  font-family: 'AvenirPro', sans-serif;
+  font-family: 'Circular', sans-serif;
   -webkit-font-smoothing: 'antialiased';
   font-weight: 400;
 }
 
 h3 {
   color: #666;  
-  font-family: 'AvenirPro', sans-serif;
+  font-family: 'Circular', sans-serif;
   -webkit-font-smoothing: 'antialiased';
 }
 
