@@ -36,8 +36,3 @@ $(document).ready(function() {
 
 
 });
-
-
-// $('#quoteModalThanks').on('click', function) {
-//   location.reload();
-// }
