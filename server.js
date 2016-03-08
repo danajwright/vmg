@@ -134,6 +134,25 @@ app.get('/work', function(req, res) {
     res.render('pages/work');
 });
 
+
+
+// track page
+app.get('/track', function(req, res) {
+    res.render('pages/track');
+});
+
+// pod page
+app.get('/pod', function(req, res) {
+    res.render('pages/pod');
+});
+
+// quote page
+app.get('/quote', function(req, res) {
+    res.render('pages/quote');
+});
+
+
+
 // equip page
 app.get('/equip', function(req, res) {
     res.render('pages/equip');
