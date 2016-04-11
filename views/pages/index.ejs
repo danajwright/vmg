@@ -19,16 +19,16 @@
 	<section class="map-banner">
 		<div class="constrainer">
 			<div class="map-container">
-				<svg id="svgA" width="100%" height="400px" viewBox="0 0 1015 426.01" preserveAspectRatio="xMidYMid meet"></svg>
+				<svg id="svgA" width="100%" viewBox="0 0 996 426.4"></svg>
+
 				<script>
 
-
-				///////  SVG A  ///////////
+				///////  SVG A CA NORTH  ///////////
 
 				var snapA = Snap("#svgA");
 
 				  // SVG A - "Squiggly" Path
-				  var myPathA = snapA.path("M100.22,268.46a26.87,26.87,0,0,0,21.94-2.71c1.75-1.08,3.42-2.39,5.42-2.85,3.9-.91,7.68,1.57,11,3.74a104.85,104.85,0,0,0,70.31,15.66c5.22-6.9,16.4-8.21,23.07-2.71,3.09,2.55,5.14,6.17,8.17,8.8,6.86,6,17.18,5.57,26,3.26s17.34-6.22,26.43-6.26c16.83-.06,31.24,13.08,48,14.52,9,0.78,17.94-1.9,27-2.56,19.58-1.44,38.59,6.6,58.15,8.17,26.56,2.14,56.22-7,78.16,8.13,2.44,1.68,4.89,3.7,7.84,3.93a14.09,14.09,0,0,0,4.26-.54l97.67-22.6").attr({
+				  var myPathA = snapA.path("M97.79,268.29c-7.89,1.41-17.26,2.36-22.72-3.5-2.45-2.63-3.59-6.19-4.66-9.62L42.29,165l-4.2-13.46C32.28,132.91,26.4,113.79,27.44,94.3c0.9-17,7-33.24,14.06-48.71,3-6.62,6.31-13.3,11.56-18.32S65.95,19.13,73,21.06c2.61,0.72,5,2.1,7.65,2.74,7,1.7,14-1.88,21.14-2.67,10.84-1.2,21.47,4.24,29.59,11.52S145.7,49,152.92,57.21c24.32,27.56,61,46.7,72.17,81.7-5.56.63-12,2.89-16,6.82-6.44,6.35-9.14,15.79-15.71,22-5.83,5.51-14.14,7.92-19.72,13.7-5.06,5.24-7.21,12.56-9.19,19.57l-3.62,12.81").attr({
 						  id: "squiggle",
 						  fill: "none",
 				  		});
@@ -38,11 +38,6 @@
 
 				  // Animate Path
 				  myPathA.attr({
-					  stroke: '#fff',
-					  strokeWidth: 4,
-					  strokeLinecap: "round",
-					  strokeLinejoin: "round",
-					  strokeDasharray: "0 7",
 				      fill: 'none',
 				  
 				  }).animate({"stroke-dashoffset": 0}, 9000);
@@ -50,12 +45,12 @@
 				  // Truck
 				  var truckA = snapA.image("../../img/red-truck5.svg","","",18,18);
 				  truckA.attr({
-				    fill: "#E14339"
+				    fill: "transparent",
 				  });
 
 				  setTimeout( function() {
 				  	// truck start point
-				    Snap.animate(200, lenA, function( value ) {
+				    Snap.animate(109, lenA, function( value ) {
 				       movePoint = myPathA.getPointAtLength( value );
 				       // move truck along path via x & y attributes
 				       truckA.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
@@ -64,12 +59,12 @@
 				  });
 
 
-				///////  SVG B  ///////////
+				///////  SVG B MAINE SOUTH ///////////
 
 				var snapB = Snap("#svgA");
 
 				  // SVG B - "Squiggly" Path
-				  var myPathB = snapB.path("M96.52,272.11C91.44,257.67,73.48,253,62.83,242c-11.13-11.5-13.29-28.9-13-44.9s2.3-32.46-2.66-47.68c-2.19-6.74-5.7-13-7.57-19.84-5.1-18.63,4-40.17,20.85-49.54,3.08-1.71,6.38-3.05,9.31-5,2.77-1.87,5.14-4.26,7.72-6.39A50.64,50.64,0,0,1,114,57.33").attr({
+				  var myPathB = snapB.path("M967.8,24.47C955.55,25.91,947.39,37.72,942.37,49s-9.15,23.89-19.17,31.09c-7.12,5.11-16.43,6.81-22.88,12.75-3.52,3.24-5.9,7.5-8.88,11.24-8.84,11.07-22.56,17.09-32.62,27.07-6.05,6-10.64,13.28-15.61,20.21-13.77,19.18-30.7,35.85-47.77,52.17q-43,41.09-87.94,80.06c-9.35,8.1-18.86,16.21-29.84,21.92C655.6,317,629.81,317.81,605.14,320.9a371.87,371.87,0,0,0-90.86,23.32c-26.93,10.69-52.49,24.48-78,38.24l-28.21,15.22").attr({
 						  id: "squiggle",
 						  fill: "none",
 				  		});
@@ -79,36 +74,19 @@
 
 				  // Animate Path
 				  myPathB.attr({
-					  stroke: '#fff',
-					  strokeWidth: 4,
-					  strokeLinecap: "round",
-					  strokeLinejoin: "round",
-					  strokeDasharray: "0 7",
 				      fill: 'none',
-
+				  
 				  }).animate({"stroke-dashoffset": 0}, 9000);
 
 				  // Truck
 				  var truckB = snapB.image("../../img/red-truck5.svg","","",18,18);
 				  truckB.attr({
-				    fill: "#E14339"
-				  });
-
- 				  // Pin Socal
-				  var pinSocal = snapB.image("../../img/pinSocal.svg");
-				  pinSocal.attr({
-				    fill: "#FFF",
-				  });
-
-				  // Pin Or
-				  var pinOr = snapB.image("../../img/pinOr.svg");
-				  pinOr.attr({
-				    fill: "#FFF",
+				    fill: "transparent",
 				  });
 
 				  setTimeout( function() {
 				  	// truck start point
-				    Snap.animate(50, lenB, function( value ) {
+				    Snap.animate(19, lenB, function( value ) {
 				       movePoint = myPathB.getPointAtLength( value );
 				       // move truck along path via x & y attributes
 				       truckB.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
@@ -117,12 +95,12 @@
 				  });
 
 
-				///////  SVG C  ///////////
+				///////  SVG C FL NORTH ///////////
 
 				var snapC = Snap("#svgA");
 
 				  // SVG C - "Squiggly" Path
-				  var myPathC = snapC.path("M514.8,214.2C494,195.66,460.13,193.84,437.42,210c-7.13,5.08-13.4,11.79-21.72,14.52-5.54,1.82-11.51,1.7-17.35,1.55l-42.25-1a89.72,89.72,0,0,1-16-1.35c-10.61-2.19-20-8.12-30.17-11.91-31.95-12-67.43-2-101.54-2.5-11.06-.16-22.38-1.4-33,1.68-21.48,6.23-34.07,27.87-44.5,47.66").attr({
+				  var myPathC = snapC.path("M802,386c-10.18-20.19-.52-44.79,12.56-63.23s30-35.16,36.11-56.91c1.3-4.58,2.06-9.55.5-14-2.3-6.62-8.92-10.55-15.05-13.93l-32.88-18.1c-11.08-6.1-24.06-12.37-35.85-7.76-3.42,1.34-6.94,3.6-10.48,2.59-2.84-.81-4.66-3.49-6.39-5.88-28.36-39.19-89.41-42.8-117.76-82-7.26-10-12.05-22.08-21.4-30.21C590.27,78.21,555.22,86.92,533,70c-6.93-5.28-12-12.62-18-18.92-23.54-24.63-60.94-31.47-94.69-26.81-22.5,3.11-44.95,10.69-67.42,7.39-2.11-8.82-13.74-10.63-22.8-10.2a303.5,303.5,0,0,0-76.38,13.63C238.4,39.92,223.27,46,207.28,47.64c-23.64,2.41-47-5.07-69.62-12.46").attr({
 						  id: "squiggle",
 						  fill: "none",
 				  		});
@@ -132,43 +110,210 @@
 
 				  // Animate Path
 				  myPathC.attr({
-					  stroke: '#fff',
-					  strokeWidth: 4,
-					  strokeLinecap: "round",
-					  strokeLinejoin: "round",
-					  strokeDasharray: "0 7",
 				      fill: 'none',
-
+				  
 				  }).animate({"stroke-dashoffset": 0}, 9000);
 
 				  // Truck
 				  var truckC = snapC.image("../../img/red-truck5.svg","","",18,18);
 				  truckC.attr({
-				    fill: "#FFF"
+				    fill: "transparent",
 				  });
-
-				  // Pin KA
-				  var pinC = snapC.image("../../img/pinKa.svg");
-				  truckB.attr({
-				    fill: "#FFF",
-				  });
-
-				  // Pin AR
-				  var pinC = snapC.image("../../img/pinAr.svg");
-				  truckB.attr({
-				    fill: "#FFF",
-				  });
-
 
 				  setTimeout( function() {
 				  	// truck start point
-				    Snap.animate(50, lenC, function( value ) {
+				    Snap.animate(69, lenC, function( value ) {
 				       movePoint = myPathC.getPointAtLength( value );
 				       // move truck along path via x & y attributes
 				       truckC.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
 				    // speed of truck
 				    },120000);
 				  });
+
+
+
+				///////  SVG D MI West ///////////
+
+				var snapD = Snap("#svgA");
+
+				  // SVG D - "Squiggly" Path
+				  var myPathD = snapD.path("M647.71,224.9a103,103,0,0,0-29.77-27.77c-2-1.23-4.27-2.43-6.58-2s-3.95,2.2-5.44,3.93a202.38,202.38,0,0,0-30.38,47.24c-1.28,2.77-2.63,5.73-5.22,7.33-2.11,1.31-4.71,1.49-7.18,1.63-10.58.6-21.39,1.11-31.28,4.92s-18.9,11.61-21.21,22c-2.72,12.22,4.08,26-1.85,37.06a62.65,62.65,0,0,0-32.23-12.86c-11.61-1.13-23.3,1-35,.9-30.11-.3-59.92-15.6-89.31-9-5.45,1.22-10.95,3.2-16.47,2.37-6.4-1-11.58-5.46-17.24-8.6-19.48-10.82-43.47-5.17-65.38-1.15-3.64.67-7.5,1.27-11-.07-5.65-2.19-8.32-8.76-13.42-12-8.65-5.57-19.74.12-29.69,2.73-24.44,6.42-49.23-7.07-70.9-20.05a62,62,0,0,1-29.13,18.07").attr({
+						  id: "squiggle",
+						  fill: "none",
+				  		});
+
+				  // Draw Path
+				  var lenD = myPathD.getTotalLength();
+
+				  // Animate Path
+				  myPathD.attr({
+				      fill: 'none',
+				  
+				  }).animate({"stroke-dashoffset": 0}, 9000);
+
+				  // Truck
+				  var truckD = snapD.image("../../img/red-truck5.svg","","",18,18);
+				  truckD.attr({
+				    fill: "transparent",
+				  });
+
+				  setTimeout( function() {
+				  	// truck start point
+				    Snap.animate(69, lenD, function( value ) {
+				       movePoint = myPathD.getPointAtLength( value );
+				       // move truck along path via x & y attributes
+				       truckD.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
+				    // speed of truck
+				    },120000);
+				  });				  
+
+
+
+				///////  SVG E MD West ///////////
+
+				var snapE = Snap("#svgA");
+
+				  // SVG E - "Squiggly" Path
+				  var myPathE = snapE.path("M139.17,245.06c3.77-15.33,17.36-26.7,32.2-32.1s30.95-5.79,46.73-6.12c30-.64,60.43-1.22,89.35,6.68,10.5,2.87,20.7,6.83,31.29,9.33,16.94,4,34.51,4.15,51.91,4.28,7.25,0.06,14.61.1,21.58-1.89,12.32-3.52,22-12.93,33.37-18.79a63.2,63.2,0,0,1,54.21-1.34c6.44,2.92,12.6,7,19.63,7.72,5,0.51,10-.77,14.88-2.26,14.78-4.54,28.94-11.1,44-14.62s31.7-3.72,45.11,4c11.16,6.39,18.75,17.37,27.33,27s19.7,18.52,32.56,18.38c13.14-.15,24.7-9.78,37.83-10.21a28.24,28.24,0,0,1,25,14,182.14,182.14,0,0,1,41.46-37.68").attr({
+						  id: "squiggle",
+						  fill: "none",
+				  		});
+
+				  // Draw Path
+				  var lenE = myPathE.getTotalLength();
+
+				  // Animate Path
+				  myPathE.attr({
+				      fill: 'none',
+				  
+				  }).animate({"stroke-dashoffset": 0}, 9000);
+
+				  // Truck
+				  var truckE = snapE.image("../../img/red-truck5.svg","","",18,18);
+				  truckE.attr({
+				    fill: "transparent",
+				  });
+
+				  setTimeout( function() {
+				  	// truck start point
+				    Snap.animate(69, lenE, function( value ) {
+				       movePoint = myPathE.getPointAtLength( value );
+				       // move truck along path via x & y attributes
+				       truckE.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
+				    // speed of truck
+				    },120000);
+				  });			
+
+
+
+				///////  SVG F Through FL ///////////
+
+				var snapF = Snap("#svgA");
+
+				  // SVG F - "Squiggly" Path
+				  var myPathF = snapF.path("M589,321.54c2.39,6.43,10.22,9.14,17.08,8.87s13.51-2.66,20.37-2.84c17.7-.45,34.3,13.74,51.57,9.86,7.61-1.71,14.37-6.85,22.17-7.14,9-.34,16.87,5.85,23.78,11.7l52.49,44.49c3.81,3.23,7.9,6.59,12.85,7.3s10.79-2.51,10.94-7.5c-7.46-1.78-11.59-9.54-14.79-16.51l-24.12-52.53c8.78-12.07,22-20.08,35-27.26,17-9.33,34.47-17.84,52.74-24.27,4.47-1.57,9.11-3.1,12.7-6.19,8.69-7.5,8.09-21.35,3.79-32s-11.49-20.16-14.07-31.34C847.93,180.55,854.75,163,868,154").attr({
+						  id: "squiggle",
+						  fill: "none",
+				  		});
+
+				  // Draw Path
+				  var lenF = myPathF.getTotalLength();
+
+				  // Animate Path
+				  myPathF.attr({
+				      fill: 'none',
+				  
+				  }).animate({"stroke-dashoffset": 0}, 9000);
+
+				  // Truck
+				  var truckF = snapF.image("../../img/red-truck5.svg","","",18,18);
+				  truckF.attr({
+				    fill: "transparent",
+				  });
+
+				  setTimeout( function() {
+				  	// truck start point
+				    Snap.animate(0, lenF, function( value ) {
+				       movePoint = myPathF.getPointAtLength( value );
+				       // move truck along path via x & y attributes
+				       truckF.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
+				    // speed of truck
+				    },120000);
+				  });			
+
+
+				///////  SVG G Mid west ///////////
+
+				var snapG = Snap("#svgA");
+
+				  // SVG G - "Squiggly" Path
+				  var myPathG = snapG.path("M94,276.23l10.71,0.9L94.86,277l12.08,0.31-6.6,1a17.07,17.07,0,0,0,1.77,13.67c-4.77,3.85-.51,12.22,5.38,13.92,3.64,1.05,7.88.55,10.71-2s3.71-7.23,1.42-10.25A110.58,110.58,0,0,1,160.06,298c5.56,1.67,11.06,3.82,15.77,7.22,6.8,4.92,11.54,12.13,17.51,18,12.34,12.18,29.51,18.27,46.58,21.28,6.25,1.1,13.26,1.68,18.41-2a162,162,0,0,0,50.83-7l72.59,18.43c6.71,1.7,13.61,3.42,20.49,2.58a56,56,0,0,0,9.37-2.27l35.56-10.81,47.35,0.93c1.8,0,3.75.12,5.14,1.27s1.88,3.17,2.24,5l10.59,54.8a29,29,0,0,0,26.23-3.29").attr({
+						  id: "squiggle",
+						  fill: "none",
+				  		});
+
+				  // Draw Path
+				  var lenG = myPathG.getTotalLength();
+
+				  // Animate Path
+				  myPathG.attr({
+				      fill: 'none',
+				  
+				  }).animate({"stroke-dashoffset": 0}, 9000);
+
+				  // Truck
+				  var truckG = snapG.image("../../img/red-truck5.svg","","",18,18);
+				  truckF.attr({
+				    fill: "transparent",
+				  });
+
+				  setTimeout( function() {
+				  	// truck start point
+				    Snap.animate(0, lenG, function( value ) {
+				       movePoint = myPathG.getPointAtLength( value );
+				       // move truck along path via x & y attributes
+				       truckG.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
+				    // speed of truck
+				    },90000);
+				  });
+
+
+
+				///////  SVG H HQ east ///////////
+
+				var snapH = Snap("#svgA");
+
+				  // SVG H - "Squiggly" Path
+				  var myPathH = snapH.path("M100.27,278.94a133.63,133.63,0,0,0,57.66-65.11c3.55-8.63,6.28-17.8,12-25.2,7.38-9.6,19-15.17,26.69-24.51,3.91-4.74,6.73-10.35,10.95-14.81,4.77-5.06,11.1-8.39,17.6-10.87,26.33-10,55.65-6.92,83.51-2.74,9,1.35,18.52,3,25.48,8.93,13.34,11.31,11.46,31.87,15.33,48.92,0.51,2.25,1.26,4.65,3.15,6,1.63,1.15,3.76,1.23,5.75,1.27L375,201.13").attr({
+						  id: "squiggle",
+						  fill: "none",
+				  		});
+
+				  // Draw Path
+				  var lenH = myPathH.getTotalLength();
+
+				  // Animate Path
+				  myPathH.attr({
+				      fill: 'none',
+				  
+				  }).animate({"stroke-dashoffset": 0}, 9000);
+
+				  // Truck
+				  var truckH = snapG.image("../../img/red-truck5.svg","","",18,18);
+				  truckH.attr({
+				    fill: "transparent",
+				  });
+
+				  setTimeout( function() {
+				  	// truck start point
+				    Snap.animate(0, lenH, function( value ) {
+				       movePoint = myPathH.getPointAtLength( value );
+				       // move truck along path via x & y attributes
+				       truckH.attr({ x: movePoint.x-9, y: movePoint.y-9 }); 
+				    // speed of truck
+				    },60000);
+				  });			
+
 
 
 				</script>
