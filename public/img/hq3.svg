@@ -17,8 +17,8 @@
     xlink:href="#hqBar1"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.75;1"
-    dur="6s"
+    keyTimes="0;0.1;0.45;1"
+    dur="9s"
     begin="0s"
     repeatCount="indefinite" />
 
@@ -29,8 +29,8 @@
     xlink:href="#hqBar2"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.73;1"
-    dur="6s"
+    keyTimes="0;0.1;0.43;1"
+    dur="9s"
     begin="0s"
     repeatCount="indefinite" />
 
@@ -41,8 +41,8 @@
     xlink:href="#hqBar3"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.71;1"
-    dur="6s"
+    keyTimes="0;0.1;0.41;1"
+    dur="9s"
     begin="0s"
     repeatCount="indefinite" />
 
