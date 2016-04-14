@@ -17,7 +17,7 @@
     xlink:href="#hqBar1"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.45;1"
+    keyTimes="0;0.1;0.65;1"
     dur="9s"
     begin="0s"
     repeatCount="indefinite" />
@@ -29,7 +29,7 @@
     xlink:href="#hqBar2"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.43;1"
+    keyTimes="0;0.1;0.63;1"
     dur="9s"
     begin="0s"
     repeatCount="indefinite" />
@@ -41,7 +41,7 @@
     xlink:href="#hqBar3"
 	attributeName="display"
     values="none;none;inline;none"
-    keyTimes="0;0.1;0.41;1"
+    keyTimes="0;0.1;0.61;1"
     dur="9s"
     begin="0s"
     repeatCount="indefinite" />
